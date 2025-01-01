@@ -1,0 +1,110 @@
+/* HomePage.css */
+
+/* Page Container */
+.page-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Video Background */
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure the video stays behind the content */
+  }
+  
+  .video-background {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .search-icon {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  /* Main Content */
+  .content-container {
+    max-width: 600px;
+    margin: 120px auto 20px; /* Adjusted for video background */
+    text-align: center;
+    color: #fff;
+  }
+  
+  .heading {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .sub-heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .redirect-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Apply custom cursor globally for the entire webpage */
+body {
+    cursor: url(''), auto;
+}
+
+/* Optionally, you can apply the custom cursor only to specific elements */
+.button, .navbar, .video-container {
+    cursor: url('cursor.png'), auto;
+}
+
+  
